@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Jose Arellane" />
+
+    <title>Title Description Here</title>
+    <meta name="description" content="Site Description Here" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <script defer src="src/scripts/main.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside class="dock" id="dock">
+        <div class="panel-stack">
+          <section class="panel" data-panel="apps" id="panel-apps">
+            <article class="item">
+              <div class="icon">K</div>
+              <div>
+                <div class="title">Klack</div>
+                <div class="subtitle">Satisfying key sounds</div>
+              </div>
+            </article>
+            <article class="item">
+              <div class="icon light">Q</div>
+              <div>
+                <div class="title">Quill</div>
+                <div class="subtitle">Craft pages, and docs</div>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel" data-panel="components" id="panel-components">
+            <article class="item">
+              <div class="icon-ghost"><i data-lucide="layers"></i></div>
+              <div class="title">Action Bar</div>
+              <div class="tag">Dynamic</div>
+            </article>
+            <article class="item">
+              <div class="icon-ghost"><i data-lucide="layers"></i></div>
+              <div class="title">Image Expand</div>
+              <div class="tag">Overlay</div>
+            </article>
+            <article class="item">
+              <div class="icon-ghost"><i data-lucide="layers"></i></div>
+              <div class="title">Read Time</div>
+              <div class="tag">Scroll</div>
+            </article>
+          </section>
+
+          <section class="panel" data-panel="notes" id="panel-notes">
+            <article class="item">
+              <div class="icon light">N</div>
+              <div>
+                <div class="title">Meeting Notes</div>
+                <div class="subtitle">Roadmap and priorities</div>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <div class="divider"></div>
+
+        <nav class="nav" role="tablist" aria-label="Menu sections">
+          <span class="pill" id="pill" aria-hidden="true"></span>
+          <button class="tab" role="tab" data-panel="apps" aria-selected="false" aria-controls="panel-apps">
+            <i data-lucide="layout-grid"></i>
+            <span>Apps</span>
+          </button>
+          <button class="tab" role="tab" data-panel="components" aria-selected="false" aria-controls="panel-components">
+            <i data-lucide="layers"></i>
+            <span>Components</span>
+          </button>
+          <button class="tab" role="tab" data-panel="notes" aria-selected="false" aria-controls="panel-notes">
+            <i data-lucide="sticky-note"></i>
+            <span>Notes</span>
+          </button>
+        </nav>
+      </aside>
+    </div>
+  </body>
+</html>
